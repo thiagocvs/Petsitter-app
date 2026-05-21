@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetSitter - Cuidado de Mascotas</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #fff7f2;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff914d;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      gap: 40px;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .hero-text button {
+      background-color: #ff914d;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero-text button:hover {
+      background-color: #e97f3d;
+    }
+
+    .hero img {
+      width: 400px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .features {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: white;
+    }
+
+    .features h2 {
+      margin-bottom: 40px;
+      font-size: 36px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #fff3eb;
+      width: 280px;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin: 15px 0;
+      color: #ff914d;
+    }
+
+    .cta {
+      background-color: #ff914d;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .cta button {
+      margin-top: 20px;
+      background-color: white;
+      color: #ff914d;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-text h2 {
+        font-size: 36px;
+      }
+
+      .hero img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🐾 PetSitter</h1>
+
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="login-cuidadores.html">Cuidadores</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>El mejor cuidado para tu mascota</h2>
+
+      <p>
+        Encontrá cuidadores confiables para tu perro o gato.
+        Recibí fotos, videos y seguimiento en tiempo real desde tu celular.
+      </p>
+
+      <button onclick="mostrarMensaje()">Buscar cuidador</button>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1000&auto=format&fit=crop" alt="Perro feliz">
+  </section>
+
+  <section class="features">
+    <h2>¿Qué ofrece PetSitter?</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>📍 GPS en tiempo real</h3>
+        <p>Seguí el recorrido de paseo de tu mascota desde la app.</p>
+      </div>
+
+      <div class="card">
+        <h3>📸 Fotos y videos</h3>
+        <p>Recibí actualizaciones mientras tu mascota está al cuidado.</p>
+      </div>
+
+      <div class="card">
+        <h3>🛡️ Cuidadores verificados</h3>
+        <p>Consultá perfiles, reseñas y experiencia antes de contratar.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Tu mascota merece el mejor cuidado</h2>
+
+    <p>Descargá la app y encontrá cuidadores cerca tuyo.</p>
+
+    <button onclick="descargarApp()">Descargar App</button>
+  </section>
+
+  <footer>
+    <p>© 2026 PetSitter - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    function mostrarMensaje() {
+      alert('Próximamente podrás buscar cuidadores disponibles 🐶');
+    }
+
+    function descargarApp() {
+      alert('La descarga comenzará pronto 📲');
+    }
+  </script>
+
+</body>
+</html>

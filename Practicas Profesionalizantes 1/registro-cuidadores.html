@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Cuidadores - PetSitter</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #fff7f2, #ffe6d5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 30px;
+    }
+
+    .register-container {
+      background-color: white;
+      width: 450px;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 20px rgba(0,0,0,0.15);
+    }
+
+    .register-container h1 {
+      text-align: center;
+      color: #ff914d;
+      margin-bottom: 10px;
+    }
+
+    .register-container p {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 15px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    button {
+      width: 100%;
+      background-color: #ff914d;
+      color: white;
+      border: none;
+      padding: 14px;
+      margin-top: 25px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #e57d3e;
+    }
+
+    .links {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .links a {
+      color: #ff914d;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 25px;
+      color: #666;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="register-container">
+
+    <h1>🐾 Registro de Cuidadores</h1>
+
+    <p>
+      Completá tus datos para comenzar a ofrecer servicios de cuidado y paseo de mascotas.
+    </p>
+
+    <form>
+
+      <label>Nombre completo</label>
+      <input type="text" placeholder="Ej: María Gómez">
+
+      <label>Correo electrónico</label>
+      <input type="email" placeholder="cuidador@email.com">
+
+      <label>Teléfono</label>
+      <input type="tel" placeholder="3511234567">
+
+      <label>Zona o ciudad</label>
+      <input type="text" placeholder="Ej: Córdoba Capital">
+
+      <label>Experiencia con mascotas</label>
+      <textarea placeholder="Contanos tu experiencia cuidando mascotas..."></textarea>
+
+      <label>Contraseña</label>
+      <input type="password" placeholder="********">
+
+      <button type="button" onclick="registrarCuidador()">
+        Registrarme como cuidador
+      </button>
+
+    </form>
+
+    <div class="links">
+      <p>¿Ya tenés cuenta?</p>
+      <a href="login-cuidadores.html">Iniciar sesión</a>
+    </div>
+
+    <a class="back" href="index.html">
+      ← Volver al inicio
+    </a>
+
+  </div>
+
+  <script>
+    function registrarCuidador() {
+      alert('Registro realizado con éxito 🐶');
+    }
+  </script>
+
+</body>
+</html>
