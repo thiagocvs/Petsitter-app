@@ -38,6 +38,8 @@ Cambios realizados:** Creación de la página `buscar-cuidadores.html` y vincula
 Captura de evidencia:**
 <img width="1080" height="328" alt="WhatsApp Image 2026-05-25 at 7 51 05 PM" src="https://github.com/user-attachments/assets/6d4c355c-def3-44c0-bb76-4c8f88477803" />
 <img width="837" height="487" alt="WhatsApp Image 2026-05-21 at 11 36 57 AM" src="https://github.com/user-attachments/assets/11b415cd-896b-4cc7-9f91-87c448cc655d" />
+<img width="858" height="557" alt="WhatsApp Image 2026-05-25 at 8 11 26 PM" src="https://github.com/user-attachments/assets/6b7f581c-b815-46dd-a1f0-b7b05844bc82" />
+
 
 
 
